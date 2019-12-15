@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SAT</title>
+   <link rel="stylesheet" href="{{ base_url() }}/css/bootstrap.min.css"/>
+   <link rel="stylesheet" href="{{ base_url() }}/css/app.css"/>
+</head>
+<body>
+   <div class="container">
+      <div class="row">
+         <div class="header"></div>
+         
+         <ul id="tabs" class="nav nav-tabs">
+            <li class="nav-item"><a href="{{ base_url() }}/home" data-target="#home" data-toggle="tab" class="nav-link small text-uppercase active">Home</a></li>
+            <li class="nav-item"><a href="{{ base_url() }}/about" data-target="#profile" data-toggle="tab" class="nav-link small text-uppercase">About SAT</a></li>
+            <li class="nav-item"><a href="{{ base_url() }}/register" data-target="#register" data-toggle="tab" class="nav-link small text-uppercase">Registration</a></li>
+            <li class="nav-item"><a href="{{ base_url() }}/learning" data-target="#learning" data-toggle="tab" class="nav-link small text-uppercase">Learning</a></li>
+            <li class="nav-item"><a href="{{ base_url() }}/examination" data-target="#examination" data-toggle="tab" class="nav-link small text-uppercase">Examination</a></li>
+            <li class="nav-item"><a href="{{ base_url() }}/results" data-target="#results" data-toggle="tab" class="nav-link small text-uppercase">Results</a></li>
+            <li class="nav-item"><a href="{{ base_url() }}/contact" data-target="#contact" data-toggle="tab" class="nav-link small text-uppercase">Contact Us</a></li>
+            <li class="nav-item"><a href="{{ base_url() }}/branches" data-target="#branches" data-toggle="tab" class="nav-link small text-uppercase">Branches</a></li>
+         </ul>
+      </div>
+   </div>
+   <div class="container">
+      <div class="row tab-content" id="tabsContent">
+         {% block content %}{% endblock %}
+      </div>
+   </div>
+   <div class="container-fluid">
+      <div class="row">
+         <div class="footer">
+            This is footer
+         </div>
+      </div>
+   </div>
+   <script src="{{ base_url() }}/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+   <script src="{{ base_url() }}/js/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
